@@ -34,6 +34,7 @@ function SetCarToCompare(el, carClass) {
         if(el.checked){
             if (carArr.length >= 2) {
                 alert("Você só pode comparar 2 carros por vez.");
+                el.checked = false;
                 return;
             }        
             carArr.push(carClass);
